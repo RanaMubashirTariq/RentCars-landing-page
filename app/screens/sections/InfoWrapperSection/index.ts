@@ -1,1 +1,0 @@
-export { InfoWrapperSection } from "./InfoWrapperSection";

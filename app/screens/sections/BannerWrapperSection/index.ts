@@ -1,1 +1,0 @@
-export { BannerWrapperSection } from "./BannerWrapperSection";
