@@ -108,17 +108,18 @@ export default function HeaderSection () {
         <div className="max-[1050px]:block hidden absolute top-full left-0 w-full bg-white shadow-lg z-50 custom1020:hidden animate-fade-in">
           <div>
             <ul className="flex flex-col items-start gap-2 p-4">
-              {navigationItems.map((item, index) => (
-                <li key={index}>
-                  <Link href='#' className="inline-flex items-center justify-start px-3 py-2 w-full">
-                    <span
-                      className={`font-['Inter'] text-base leading-[100%] text-defaultblack ${item.isActive ? "font-bold" : "font-medium"}`}
-                    >
-                      {item.label}
-                    </span>
-                  </Link>
-                </li>
-              ))}
+          {navigationItems.map((item) => (
+            <li key={item.id}>
+              <button
+                onClick={() => handleScrollTo(item.id)}
+                className={`font-['Inter'] text-[18px] leading-[100%] text-defaultblack cursor-pointer ${
+                  activeSection === item.id ? "font-bold" : "font-medium"
+                }`}
+              >
+                {item.label}
+              </button>
+            </li>
+          ))}
               <div className="flex items-center gap-3 mt-4">
                 <div className="relative w-10 h-10 bg-[#5937e0] rounded-[50px] flex items-center justify-center">
                   <img src='./phone-icon.svg' className="w-6 h-6" />
