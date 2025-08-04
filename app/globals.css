@@ -49,3 +49,9 @@ body {
   color: var(--foreground);
   font-family:'WorkSans' , 'Inter' ,'Poppins';
 }
+
+
+html {
+  scroll-behavior: smooth;
+  padding-top: 120px;
+}

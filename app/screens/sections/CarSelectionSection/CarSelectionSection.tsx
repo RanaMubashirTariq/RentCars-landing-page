@@ -107,7 +107,7 @@ export default function CarSelectionSection  () {
           >
             <CardContent className="flex flex-col items-center gap-5 p-0 w-full max-[480px]:gap-2">
               <div
-                className="w-full h-60 max-[480px]:h-[150px] bg-contain bg-center rounded-md"
+                className="w-full h-60 max-[480px]:h-[150px] bg-contain bg-center bg-no-repeat max-[767px]:bg-cover rounded-md"
                 style={{ backgroundImage: `url(${car.image})` }}
               />
 

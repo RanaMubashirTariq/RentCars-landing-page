@@ -1,23 +1,58 @@
 'use client'
 import { PhoneIcon, Menu as MenuIcon, X as CloseIcon } from "lucide-react";
-import React, { useState } from "react";
+import React, { useState , useEffect} from "react";
 import  Link  from "next/link";
 
 // Navigation menu items data
 const navigationItems = [
-  { label: "Home", isActive: false },
-  { label: "Vehicles", isActive: true },
-  { label: "Details", isActive: false },
-  { label: "About Us", isActive: false },
-  { label: "Contact Us", isActive: false },
+  { label: "Home", id:'home'  },
+  { label: "Vehicles",id:'vehicles' },
+  { label: "Details", id:'details' },
+  { label: "About Us", id:'mobile' },
+  { label: "Contact Us", id:'contact' },
 ];
 
 export default function HeaderSection () {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [activeSection, setActiveSection] = useState("home");
+ 
+
+    const handleScrollTo = (id: string) => {
+    const el = document.getElementById(id);
+    if (el) {
+      el.scrollIntoView({ behavior: "smooth", block: "start" });
+      setActiveSection(id);
+      setMenuOpen(false); // Close mobile menu
+    }
+  };
+
+
+
+    useEffect(() => {
+    const handleScroll = () => {
+      const offset = 100; // adjust for header
+      for (const item of navigationItems) {
+        const section = document.getElementById(item.id);
+        if (section) {
+          const top = section.offsetTop - offset;
+          const bottom = top + section.offsetHeight;
+          if (window.scrollY >= top && window.scrollY < bottom) {
+            setActiveSection(item.id);
+            break;
+          }
+        }
+      }
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+
   return (
-    <header className="flex w-full items-center justify-between px-[72px] py-[35.14px] bg-transparent relative max-[1100px]:px-[50px] max-[767px]:px-[25px] max-[767px]:py-[20px]">
+    <header className="fixed top-0 left-0 w-full z-51  bg-white px-[72px] py-[35.14px]  max-[1100px]:px-[50px] max-[767px]:px-[25px] max-[767px]:py-[20px]">
       {/* Logo */}
-      <div className="flex items-center gap-2">
+               <div className="flex  items-center justify-between relative">
+                             <div className="flex items-center gap-2">
         <div className="relative w-6 h-[25.72px] bg-[url(/group.png)] bg-[100%_100%]" />
         <div className="font-['Poppins'] font-semibold text-[#5937e0] text-base leading-[150%]">
           RENTCARS
@@ -28,17 +63,18 @@ export default function HeaderSection () {
       <nav className=" custom1020:flex max-[1050px]:hidden">
         <div>
           <ul className="flex items-start gap-5">
-            {navigationItems.map((item, index) => (
-              <li key={index}>
-                <Link href='#' className="inline-flex items-center justify-center px-3 py-1">
-                  <span
-                    className={`font-['Inter'] cursor-pointer text-[18px] leading-[100%] text-defaultblack ${item.isActive ? "font-bold" : "font-medium"}`}
-                  >
-                    {item.label}
-                  </span>
-                </Link>
-              </li>
-            ))}
+          {navigationItems.map((item) => (
+            <li key={item.id}>
+              <button
+                onClick={() => handleScrollTo(item.id)}
+                className={`font-['Inter'] text-[18px] leading-[100%] text-defaultblack cursor-pointer ${
+                  activeSection === item.id ? "font-bold" : "font-medium"
+                }`}
+              >
+                {item.label}
+              </button>
+            </li>
+          ))}
           </ul>
         </div>
       </nav>
@@ -100,6 +136,7 @@ export default function HeaderSection () {
           </div>
         </div>
       )}
+               </div>
     </header>
   );
 };

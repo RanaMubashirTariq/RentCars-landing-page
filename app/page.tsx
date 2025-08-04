@@ -14,13 +14,13 @@ export default function Home() {
   return (
     <div className="w-full">
                <HeaderSection/>   
-               <MainHeroSection/>
-               <FactsSection/>
-               <InfoWrapperSection/>
-               <CarSelectionSection/>
-               <BannerWrapperSection/>
-               <MobileAppSection/>
-               <HeroSection/>
+      <section id="home"><MainHeroSection /></section>
+      <section id="facts"><FactsSection /></section>
+      <section id="about"><InfoWrapperSection /></section>
+      <section id="vehicles"><CarSelectionSection /></section>
+      <section id="details"><BannerWrapperSection /></section>
+      <section id="mobile"><MobileAppSection /></section>
+      <section id="contact"><HeroSection /></section>
                <FooterSection/>
     </div>
   );
