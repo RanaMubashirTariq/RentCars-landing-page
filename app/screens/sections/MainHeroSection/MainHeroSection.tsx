@@ -49,7 +49,7 @@ const CustomDropdown = ({
     <div className="relative w-full z-20">
       <div
         onClick={() => setOpen(!open)}
-        className=" z-0 font-['WorkSans'] bg-[#FAFAFA] text-[#9A9A9A] border-none rounded-[10px] px-4 py-[9px] cursor-pointer flex justify-between items-center"
+        className=" z-0 font-['WorkSans'] bg-[#FAFAFA] text-black border-none rounded-[10px] px-4 py-[9px] cursor-pointer flex justify-between items-center"
       >
         <span>{selected}</span>
         <svg
@@ -62,7 +62,7 @@ const CustomDropdown = ({
         </svg>
       </div>
       {open && (
-        <ul className="absolute font-['WorkSans'] top-full mt-1 w-full bg-white rounded-[10px] shadow z-50  max-[1500px]:top-[-100px]">
+        <ul className="absolute font-['WorkSans']  top-full mt-1 w-full bg-white rounded-[10px] shadow z-50  max-[1500px]:top-[-100px]">
           {options.map((option) => (
             <li
               key={option}
@@ -70,7 +70,7 @@ const CustomDropdown = ({
                 setSelected(option);
                 setOpen(false);
               }}
-              className="px-4 py-2 font-['WorkSans'] hover:bg-[#5937E0] hover:text-white cursor-pointer  text-[#9A9A9A] font-medium font-['WorkSans] leading-[100%] max-[500px]:py-3"
+              className="px-4 py-2 font-['WorkSans'] hover:bg-[#5937E0] hover:text-white cursor-pointer  text-black font-medium font-['WorkSans] leading-[100%] max-[500px]:py-3"
             >
               {option}
             </li>
@@ -113,7 +113,7 @@ const CustomDropdown2 = ({
         onClick={openDatePicker}
         className="bg-[#FAFAFA] text-[#000000] border-none rounded-[10px] px-4 py-[9px] cursor-pointer flex justify-between items-center"
       >
-        <span className="text-[#9A9A9A]">{selected}</span>
+        <span className="text-black">{selected}</span>
         <img
           src="/date-icon.svg"
           className="w-4 h-4 object-contain"
@@ -128,7 +128,7 @@ const CustomDropdown2 = ({
 
 
   return (
-    <section className="relative flex flex-col items-center px-[72px] py-0 w-full max-[1100px]:px-[50px] max-[680px]:px-[25px] ">
+    <section className="relative bg-white flex flex-col items-center px-[72px] py-0 w-full max-[1100px]:px-[50px] max-[680px]:px-[25px] ">
       <div className="flex flex-col items-start justify-center w-full h-[660px] max-[1000px]:h-auto bg-[#5937e0] rounded-[40px] overflow-hidden px-[72px] max-[1000px]:py-5 relative   max-[1000px]:px-[40px] max-[1000px]:px-[20px] max-[680px]:px-[10px]  max-[680px]:rounded-[20px]">
         <div className="absolute w-[713px] h-[366px] top-[353px] left-[455px] max-[1000px]:w-[500px] max-[1000px]:h-[200px] max-[1000px]:top-[110px] max-[1000px]:left-[150px] max-[680px]:w-[300px] max-[680px]:h-[150px] max-[680px]:top-[150px] max-[680px]:left-[100px]">
           <img

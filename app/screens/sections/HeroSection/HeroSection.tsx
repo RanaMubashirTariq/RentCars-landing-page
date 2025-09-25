@@ -98,7 +98,7 @@ const statsData = [
 
 export default function HeroSection  () {
   return (
-    <section className="relative flex flex-col items-center py-[60px] px-[72px] w-full gap-2.5 max-[1100px]:px-[50px] max-[1000px]:py-[40px] max-[680px]:px-[25px] ">
+    <section className="bg-white relative flex flex-col items-center py-[60px] px-[72px] w-full gap-2.5 max-[1100px]:px-[50px] max-[1000px]:py-[40px] max-[680px]:px-[25px] ">
          <img src="/black-dotted.svg" className=" absolute left-[75px] max-[1100px]:left-[50px] z-10 top-[60px]  transform-[-18.66deg]  max-[1100px]:hidden" alt="" />
       <div className="flex flex-col items-center relative w-full h-[486px] max-[1100px]:h-auto rounded-[20px] bg-[#5937e0] px-[72px] pt-[60px] pb-[125px] gap-20 overflow-hidden max-[1100px]:px-[40px] max-[1100px]:pt-[40px] max-[1100px]:pb-[100px] max-[1000px]:gap-10 max-[680px]:px-[20px] max-[680px]:py-[20px] max-[680px]:gap-5">
         {/* Background image */}

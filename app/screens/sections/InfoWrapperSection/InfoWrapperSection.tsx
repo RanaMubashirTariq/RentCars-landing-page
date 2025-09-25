@@ -32,7 +32,7 @@ const infoPoints = [
 
 export default function InfoWrapperSection  () {
   return (
-    <section className="flex  justify-center max-[1000px]:flex-col max-[1000px]:items-start items-center gap-[110px] max-[1300px]:gap-[30px] p pl-[158px] pr-[72px] py-[60px] w-full max-[1100px]:pl-[50px] max-[1100px]:pr-[50px] max-[767px]:pr-[25px] max-[767px]:pl-[25px] max-[1000px]:py-[40px]">
+    <section className="bg-white flex  justify-center max-[1000px]:flex-col max-[1000px]:items-start items-center gap-[110px] max-[1300px]:gap-[30px] p pl-[158px] pr-[72px] py-[60px] w-full max-[1100px]:pl-[50px] max-[1100px]:pr-[50px] max-[767px]:pr-[25px] max-[767px]:pl-[25px] max-[1000px]:py-[40px]">
       <div    className="  w-[550px] h-[350px]  md:h-[549px] max-[1000px]:w-[100%] rounded-[20px] bg-cover bg-center bg-no-repeat "
         style={{ backgroundImage: "url(./img.jpg)" }}
         aria-label="Information section image"

@@ -55,10 +55,10 @@ export default function FooterSection (){
               </div>
 
               <div className="flex flex-col items-start justify-center ">
-                <div className="font-['WorkSans'] font-normal text-defaultblack text-base leading-[26px]">
+                <div className="font-['WorkSans'] font-normal text-black text-base leading-[26px]">
                   {item.title}
                 </div>
-                <div className="font-['WorkSans'] font-semibold text-defaultblack text-base leading-[26px] ">
+                <div className="font-['WorkSans'] font-semibold text-black text-base leading-[26px] ">
                   {item.value}
                 </div>
               </div>
@@ -72,7 +72,7 @@ export default function FooterSection (){
         <div className="w-full max-w-[1296px] flex items-start justify-between gap-[20px] max-[1022px]:flex-wrap  max-[767px]:gap-[40px] max-[500px]:gap-[20px]">
           {/* Company description and social media */}
           <div className="flex flex-col w-[280px] max-[800px]:w-[500px] max-[500px]:w-full items-start justify-between h-full">
-            <div className="font-['WorkSans'] font-medium text-defaultblack text-[14px] leading-[21px]">
+            <div className="font-['WorkSans'] font-medium text-black text-[14px] leading-[21px]">
               Faucibus faucibus pellentesque dictum turpis. Id pellentesque
               turpis massa a id iaculis lorem turpis euismod. Purus at quisque
               integer sit. Libero quis sapien tempus pellentesque netus leo
@@ -110,14 +110,14 @@ export default function FooterSection (){
           {/* Useful links */}
             <div className="w-full max-w-[520px] max-[1100px]:max-w-[420px] max-[767px]:flex-wrap flex gap-5 justify-between">
                            <div className="flex flex-col w-[180px] items-start gap-6  max-[500px]:gap-3 ">
-            <div className="font-['WorkSans'] font-semibold text-defaultblack text-[20px] leading-[100%] max-[640px]:text-[16px]">
+            <div className="font-['WorkSans'] font-semibold text-black text-[20px] leading-[100%] max-[640px]:text-[16px]">
               Useful links
             </div>
             <div className="flex flex-col items-start gap-4 w-full  max-[500px]:gap-2">
               {usefulLinks.map((link, index) => (
                 <div
                   key={index}
-                  className="font-['WorkSans'] font-normal text-defaultblack text-base leading-[26px] cursor-pointer max-[680px]:text-[14px]"
+                  className="font-['WorkSans'] font-normal text-black text-base leading-[26px] cursor-pointer max-[680px]:text-[14px]"
                 >
                   {link}
                 </div>
@@ -127,14 +127,14 @@ export default function FooterSection (){
 
           {/* Vehicles */}
           <div className="flex flex-col w-[180px] max-[500px]:w-[100px] items-start gap-6  max-[500px]:gap-3 ">
-            <div className="font-['WorkSans'] font-semibold text-defaultblack text-xl leading-[100%] max-[640px]:text-[14px] ">
+            <div className="font-['WorkSans'] font-semibold text-black text-xl leading-[100%] max-[640px]:text-[14px] ">
               Vehicles
             </div>
             <div className="flex flex-col items-start gap-4 w-full  max-[500px]:gap-2">
               {vehicleTypes.map((vehicle, index) => (
                 <div
                   key={index}
-                  className="font-['WorkSans'] font-normal text-defaultblack text-base leading-[26px] cursor-pointer max-[680px]:text-[14px]"
+                  className="font-['WorkSans'] font-normal text-black text-base leading-[26px] cursor-pointer max-[680px]:text-[14px]"
                 >
                   {vehicle}
                 </div>
@@ -145,7 +145,7 @@ export default function FooterSection (){
 
           {/* Download App */}
           <div className="flex flex-col w-[180px] items-start gap-6 max-[500px]:w-[100%] max-[500px]:items-center">
-            <div className="font-['WorkSans'] font-semibold text-defaultblack text-[20px] leading-[100%]">
+            <div className="font-['WorkSans'] font-semibold text-black text-[20px] leading-[100%]">
               Download App
             </div>
             <div className="flex gap-3 flex-wrap stify-center max-[480px]:space-x-0  max-[480px]:gap-2">
@@ -169,7 +169,7 @@ export default function FooterSection (){
       </div>
 
 
-      <div className="font-['Inter'] font-normal text-[#00000080] text-sm leading-[26px] max-[500px]:text-[12px]">
+      <div className="font-['Inter'] font-normal text-black/50 text-sm leading-[26px] max-[500px]:text-[12px]">
         Copyright 2023 ・ Rentcars, All Rights Reserved
       </div>
           

@@ -5,7 +5,7 @@ import { Input } from "../../../components/ui/input";
 
 export default function BannerWrapperSection  () {
   return (
-    <section className="py-[60px] px-[72px] w-full max-[1100px]:px-[50px] max-[1000px]:py-[40px] max-[767px]:px-[25px]">
+    <section className="py-[60px] bg-white px-[72px] w-full max-[1100px]:px-[50px] max-[1000px]:py-[40px] max-[767px]:px-[25px]">
       <Card className="bg-[#5937e0] rounded-[20px] overflow-hidden relative">
             <div className="w-full max-w-[1246px] h-[146px] absolute top-[80px] left-[-572px] max-[1100px]:left-[-400px] max-[1100px]:h-[100px] max-[1000px]:top-[20px] max-[1000px]:h-[150px] max-[1000px]:left-[-350px] max-[800px]:h-[100px] max-[800px]:left-[-0px]  max-[500px]:h-[120px] max-[800px]:top-[10px] z-0">
                  <img src="/black-dotted-2.svg" className="w-full h-full object-cover" alt="" />

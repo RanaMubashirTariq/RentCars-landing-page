@@ -67,7 +67,7 @@ export default function HeaderSection () {
             <li key={item.id}>
               <button
                 onClick={() => handleScrollTo(item.id)}
-                className={`font-['Inter'] text-[18px] leading-[100%] text-defaultblack cursor-pointer ${
+                className={`font-['Inter'] text-[18px] leading-[100%] text-black cursor-pointer ${
                   activeSection === item.id ? "font-bold" : "font-medium"
                 }`}
               >
@@ -86,10 +86,10 @@ export default function HeaderSection () {
           <img src='./phone-icon.svg' className="w-6 h-6" />
         </div>
         <div className="flex flex-col items-start justify-center ">
-          <h1 className="font-['WorkSans'] font-normal text-defaultblack text-base leading-[26px] m-0">
+          <h1 className="font-['WorkSans'] font-normal text-black text-base leading-[26px] m-0">
             Need help?
           </h1>
-          <p className="font-['WorkSans'] font-semibold text-defaultblack text-base leading-[26px] m-0">
+          <p className="font-['WorkSans'] font-semibold text-black text-base leading-[26px] m-0">
             +996 247-1680
           </p>
         </div>
