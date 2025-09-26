@@ -16,11 +16,11 @@ export default function Home() {
                <HeaderSection/>   
       <section id="home"><MainHeroSection /></section>
       <section id="facts"><FactsSection /></section>
-      <section id="about"><InfoWrapperSection /></section>
+      <section id="about"><InfoWrapperSection /></section> 
       <section id="vehicles"><CarSelectionSection /></section>
-      <section id="details"><BannerWrapperSection /></section>
-      <section id="mobile"><MobileAppSection /></section>
       <section id="contact"><HeroSection /></section>
+      <section id="mobile"><MobileAppSection /></section>
+      <section id="details"><BannerWrapperSection /></section>
                <FooterSection/>
     </div>
   );

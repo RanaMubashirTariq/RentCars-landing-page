@@ -29,8 +29,8 @@ export default function MainHeroSection  () {
   ];
 
     const [cityName , setCityName] = useState('Car type')
-   const [fromCity, setFromCity] = useState("place of rental");
-  const [toCity, setToCity] = useState("place of return");
+   const [fromCity, setFromCity] = useState("Place of rental");
+  const [toCity, setToCity] = useState("Place of return");
   const [rentalDate , setRentalDate] = useState('Rental Date')
   const [returnDate , setReturnDate] = useState('Return Date')
   
@@ -49,7 +49,7 @@ const CustomDropdown = ({
     <div className="relative w-full z-20">
       <div
         onClick={() => setOpen(!open)}
-        className=" z-0 font-['WorkSans'] bg-[#FAFAFA] text-black border-none rounded-[10px] px-4 py-[9px] cursor-pointer flex justify-between items-center"
+        className=" z-0 font-['WorkSans'] font-regular bg-[#FAFAFA] text-black text-base leading-[20px] border-none rounded-[10px] px-4 py-[9px] cursor-pointer flex justify-between items-center"
       >
         <span>{selected}</span>
         <svg
@@ -70,7 +70,7 @@ const CustomDropdown = ({
                 setSelected(option);
                 setOpen(false);
               }}
-              className="px-4 py-2 font-['WorkSans'] hover:bg-[#5937E0] hover:text-white cursor-pointer  text-black font-medium font-['WorkSans] leading-[100%] max-[500px]:py-3"
+              className="px-4 py-2 font-['WorkSans'] hover:bg-[#5937E0] hover:text-white cursor-pointer  text-black text-base font-regular font-['WorkSans] leading-[20px] max-[500px]:py-3"
             >
               {option}
             </li>
@@ -111,9 +111,9 @@ const CustomDropdown2 = ({
 
       <div
         onClick={openDatePicker}
-        className="bg-[#FAFAFA] text-[#000000] border-none rounded-[10px] px-4 py-[9px] cursor-pointer flex justify-between items-center"
+        className="bg-[#FAFAFA] text-[#000000] font-regular text-base leading-[20px] border-none rounded-[10px] px-4 py-[9px] cursor-pointer flex justify-between items-center"
       >
-        <span className="text-black">{selected}</span>
+        <span className="text-black text-base leading-[20px] font-regular">{selected}</span>
         <img
           src="/date-icon.svg"
           className="w-4 h-4 object-contain"

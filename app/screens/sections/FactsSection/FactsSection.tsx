@@ -42,11 +42,11 @@ export default function FactsSection  () {
                     />
                   </div>
 
-              <h3 className=" max-w-[336px] h-7  font-['WorkSans'] font-semibold text-defaultblack text-2xl text-center leading-[100%] whitespace-nowrap overflow-hidden   max-[767px]:text-[20px] max-[767px]:w-[100%]">
+              <h3 className=" max-w-[336px] h-7  font-['WorkSans'] font-semibold text-black text-2xl text-center leading-[100%] whitespace-nowrap overflow-hidden   max-[767px]:text-[20px] max-[767px]:w-[100%]">
                 {fact.title}
               </h3>
             </div>
-            <p className="max-w-[357px]  font-['Inter'] font-normal text-defaultblack text-base text-center tracking-[0] leading-[24px]  max-[767px]:text-[14px] max-[767px]:leading-[20px] max-[680px]:w-[100%]">
+            <p className="max-w-[357px]  font-['Inter'] font-normal text-black text-base text-center tracking-[0] leading-[24px]  max-[767px]:text-[14px] max-[767px]:leading-[20px] max-[680px]:w-[100%]">
               {fact.description}
             </p>
           </div>

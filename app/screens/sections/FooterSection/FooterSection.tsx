@@ -32,7 +32,7 @@ export default function FooterSection (){
     <footer className=" w-full flex flex-col items-center gap-20 pt-[60px] pb-10 px-[72px] bg-white max-[1100px]:px-[50px] max-[1000px]:py-[40px] max-[680px]:px-[25px] max-[680px]:gap-5">
       <div className="flex flex-col gap-[60px] items-center w-full max-[500px]:gap-[30px]">
         {/* Top section with logo and contact info */}
-        <div className="flex w-full gap-[20px]  justify-between items-center max-[1100px]:flex-col max-[1100px]:gap-10">
+        <div className="flex w-full max-w-[1296px] gap-[20px]  justify-between items-center max-[1100px]:flex-col max-[1100px]:gap-10">
           {/* Logo */}
           <div className="flex items-center gap-2 mr-[180.33px] max-[1100px]:mr-[0]">
             <div className="relative w-6 h-[25.72px] bg-[url(/group-21.png)] bg-[100%_100%]" />

@@ -38,8 +38,8 @@ export default function MobileAppSection  () {
       </div>
 
       <div className="relative w-[427px] h-[527px] max-[1100px]:h-[427px] flex  max-[1000px]:hidden">
-              <img src="/group-12.png" className="absolute  left-0  w-full h-full object-contain" alt="" />
-              <img src="/group-12.png" className="absolute right-[171px] top-[69px] max-[1100px]:right-[160px] max-[1100px]:top-[50px] z-50 w-full h-full object-contain" alt="" />
+              <img src="/Group-12.png" className="absolute  left-0  w-full h-full object-contain" alt="" />
+              <img src="/Group-12.png" className="absolute right-[171px] top-[69px] max-[1100px]:right-[160px] max-[1100px]:top-[50px] z-50 w-full h-full object-contain" alt="" />
 
       </div>
     </section>

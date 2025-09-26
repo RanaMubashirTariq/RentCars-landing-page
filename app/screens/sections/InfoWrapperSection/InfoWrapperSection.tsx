@@ -49,11 +49,11 @@ export default function InfoWrapperSection  () {
                 <Badge className="w-8 h-8 flex font-['WorkSans'] items-center justify-center max-[450px]:p-1 bg-[#5937e0] rounded-full text-white font-semibold text-base leading-[100%] max-[767px]:text-[18px] max-[450px]:text-[16px] max-[450px]:min-w-[20px] max-[450px]:min-h-[20px]">
                   {point.number}
                 </Badge>
-                <h3 className="font-['WorkSans'] font-semibold text-defaultblack text-[20px] tracking-[0] leading-[100%] max-[767px]:text-[18px] max-[450px]:text-[16px]">
+                <h3 className="font-['WorkSans'] font-semibold text-black text-[20px] tracking-[0] leading-[100%] max-[767px]:text-[18px] max-[450px]:text-[16px]">
                   {point.title}
                 </h3>
               </div>
-              <p className="font-['WorkSans'] font-normal text-[#00000099] text-base leading-[100%] tracking-[0] leading-normal overflow-hidden text-ellipsis line-clamp-2 max-[1000px]:line-clamb-3 max-[767px]:text-[14px] max-[680px]:line-clamp-2">
+              <p className="font-['WorkSans'] font-regular text-black/60 text-base leading-[100%] tracking-[0] leading-normal overflow-hidden text-ellipsis line-clamp-2 max-[1000px]:line-clamb-3 max-[767px]:text-[14px] max-[680px]:line-clamp-2">
                 {point.description}
               </p>
             </CardContent>
