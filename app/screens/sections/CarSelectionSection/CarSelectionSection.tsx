@@ -83,7 +83,7 @@ export default function CarSelectionSection  () {
   return (
     <section className="bg-white flex flex-col items-center gap-10   px-[72px] py-[60px] w-full max-[1100px]:px-[50px] max-[1000px]:py-[40px] max-[767px]:px-[25px] max-[767px]:gap-5">
       <div className="flex flex-col max-[767px]:items-center md:flex-row w-full max-w-[1296px] items-start md:items-end justify-between gap-4 ">
-        <h2 className="[font-family:'WorkSans'] font-bold text-defaultblack text-[50px]  leading-[100%] max-[1100px]:text-[36px] max-[767px]:text-[28px] tracking-[0] max-[767px]:text-center">
+        <h2 className="[font-family:'WorkSans'] font-bold text-[#000000] text-[50px]  leading-[100%] max-[1100px]:text-[36px] max-[767px]:text-[28px] tracking-[0] max-[767px]:text-center">
           Choose the car that <br />
           suits you
         </h2>
@@ -92,7 +92,7 @@ export default function CarSelectionSection  () {
           variant="ghost"
           className="flex items-center gap-2 p-0 hover:bg-transparent"
         >
-          <span className="[font-family:'WorkSans'] font-bold text-defaultblack text-[20px] leading-[100%] max-[480px]:text-[16px]">
+          <span className="[font-family:'WorkSans'] font-bold text-black text-[20px] leading-[100%] max-[480px]:text-[16px]">
             View All
           </span>
           <ArrowRightIcon className="w-6 h-6 max-[480px]:w-[20px] max-[480px]:h-[20px]" />
@@ -114,10 +114,10 @@ export default function CarSelectionSection  () {
               <div className="flex flex-col items-center gap-10 w-full max-[1100px]:gap-5">
                 <div className="flex items-start justify-between w-full">
                   <div className="flex flex-col items-start gap-1">
-                    <h3 className="[font-family:'WorkSans'] font-semibold text-defaultblack text-2xl tracking-[0] leading-[100%] max-[767px]:text-[18px] ">
+                    <h3 className="[font-family:'WorkSans'] font-semibold text-black text-2xl tracking-[0] leading-[100%] max-[767px]:text-[18px] ">
                       {car.brand}
                     </h3>
-                    <p className="[font-family:'WorkSans'] font-normal text-[#00000099] text-base tracking-[0] leading-[100%] max-[767px]:text-[14px]">
+                    <p className="[font-family:'WorkSans'] font-normal text-[#000000]/60 text-base tracking-[0] leading-[100%] max-[767px]:text-[14px]">
                       {car.type}
                     </p>
                   </div>
@@ -126,7 +126,7 @@ export default function CarSelectionSection  () {
                     <span className="[font-family:'WorkSans'] font-semibold text-[#5937e0] text-2xl tracking-[0] leading-[100%] max-[767px]:text-[18px] ">
                       ${car.price}
                     </span>
-                    <span className="[font-family:'WorkSans'] font-normal text-[#00000099] text-sm tracking-[0] leading-[100%] max-[767px]:text-[14px] ">
+                    <span className="[font-family:'WorkSans'] font-normal text-[#000000]/60 text-sm tracking-[0] leading-[100%] max-[767px]:text-[14px] ">
                       per day
                     </span>
                   </div>
