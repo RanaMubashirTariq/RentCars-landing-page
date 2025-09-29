@@ -69,7 +69,7 @@ export default function FooterSection (){
 
 
         {/* Main footer content */}
-        <div className="w-full max-w-[1296px] flex items-start justify-between gap-[20px] max-[1022px]:flex-wrap  max-[767px]:gap-[40px] max-[500px]:gap-[20px]">
+        <div className="w-full max-w-[1296px] flex items-start justify-between gap-[20px] max-[1100px]:flex-wrap  max-[767px]:gap-[40px] max-[500px]:gap-[20px]">
           {/* Company description and social media */}
           <div className="flex flex-col w-[280px] max-[800px]:w-[500px] max-[500px]:w-full items-start justify-between h-full">
             <div className="font-['WorkSans'] font-medium text-black text-[14px] leading-[21px]">
@@ -108,8 +108,8 @@ export default function FooterSection (){
           </div>
 
           {/* Useful links */}
-            <div className="w-full max-w-[520px] max-[1100px]:max-w-[420px] max-[767px]:flex-wrap flex gap-5 justify-between">
-                           <div className="flex flex-col w-[180px] items-start gap-6  max-[500px]:gap-3 ">
+            <div className="w-full max-w-[560px] max-[1300px]:max-w-[540px] max-[1100px]:max-w-[470px] max-[1000px]:max-w-[400px] max-[767px]:flex-wrap flex gap-5 justify-between">
+          <div className="flex flex-col w-[180px] items-start gap-6  max-[500px]:gap-3 max-[1300px]:pl-[10px]max-[1000px]:pl-[0px]">
             <div className="font-['WorkSans'] font-semibold text-black text-[20px] leading-[100%] max-[640px]:text-[16px]">
               Useful links
             </div>
@@ -126,7 +126,7 @@ export default function FooterSection (){
           </div>
 
           {/* Vehicles */}
-          <div className="flex flex-col w-[180px] max-[500px]:w-[100px] items-start gap-6  max-[500px]:gap-3 ">
+          <div className="flex flex-col w-[180px] max-[500px]:w-[100px] items-start gap-6  max-[500px]:gap-3  max-[1100px]:pl-[70px]  max-[1000px]:pl-[30px] max-[800px]:pl-0">
             <div className="font-['WorkSans'] font-semibold text-black text-xl leading-[100%] max-[640px]:text-[14px] ">
               Vehicles
             </div>
@@ -144,7 +144,7 @@ export default function FooterSection (){
             </div>
 
           {/* Download App */}
-          <div className="flex flex-col w-[180px] items-start gap-6 max-[500px]:w-[100%] max-[500px]:items-center">
+          <div className="flex flex-col w-[160px] max-[1100px]:w-[190px] items-start gap-6 max-[500px]:w-[100%] max-[500px]:items-center">
             <div className="font-['WorkSans'] font-semibold text-black text-[20px] leading-[100%]">
               Download App
             </div>

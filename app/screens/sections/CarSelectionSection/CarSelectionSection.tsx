@@ -114,7 +114,7 @@ export default function CarSelectionSection  () {
               <div className="flex flex-col items-center gap-10 w-full max-[1100px]:gap-5">
                 <div className="flex items-start justify-between w-full">
                   <div className="flex flex-col items-start gap-1">
-                    <h3 className="[font-family:'WorkSans'] font-semibold text-black text-2xl tracking-[0] leading-[100%] max-[767px]:text-[18px] ">
+                    <h3 className="[font-family:'WorkSans'] font-semibold text-[#000000] text-2xl tracking-[0] leading-[100%] max-[767px]:text-[18px] ">
                       {car.brand}
                     </h3>
                     <p className="[font-family:'WorkSans'] font-normal text-[#000000]/60 text-base tracking-[0] leading-[100%] max-[767px]:text-[14px]">
@@ -140,7 +140,7 @@ export default function CarSelectionSection  () {
                         alt={feature.text}
                         src={feature.icon}
                       />
-                      <span className="[font-family:'WorkSans'] font-normal text-[#00000099] text-base tracking-[0] leading-[100%] max-[767px]:text-[14px] ">
+                      <span className="[font-family:'WorkSans'] font-normal text-[#000000]/60 text-base tracking-[0] leading-[100%] max-[767px]:text-[14px] ">
                         {feature.text}
                       </span>
                     </div>
