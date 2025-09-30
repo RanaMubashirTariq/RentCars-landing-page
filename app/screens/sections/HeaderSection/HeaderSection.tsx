@@ -105,7 +105,7 @@ export default function HeaderSection () {
 
       {/* Mobile Menu Dropdown */}
       {menuOpen && (
-        <div className="max-[1050px]:block hidden absolute top-full left-0 w-full bg-white shadow-lg z-50 custom1020:hidden animate-fade-in">
+        <div className="max-[1050px]:block hidden absolute top-full right-0 w-full h-[100vh] bg-white shadow-lg z-50 custom1020:hidden animate-fade-in">
           <div>
             <ul className="flex flex-col items-start gap-2 p-4">
           {navigationItems.map((item) => (
