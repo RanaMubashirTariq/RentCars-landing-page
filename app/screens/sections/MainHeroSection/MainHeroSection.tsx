@@ -128,7 +128,7 @@ const CustomDropdown2 = ({
 
 
   return (
-    <section className="relative bg-white flex flex-col items-center px-[72px] py-0 w-full max-[1100px]:px-[50px] max-[680px]:px-[25px] ">
+    <section className="relative bg-white flex flex-col items-center px-[150px] max-[1500px]:px-[72px] py-0 w-full max-[1100px]:px-[50px] max-[680px]:px-[25px] ">
       <div className="flex flex-col items-start justify-center w-full h-[660px] max-[1000px]:h-auto bg-[#5937e0] rounded-[40px] overflow-hidden px-[72px] max-[1000px]:py-5 relative   max-[1000px]:px-[40px] max-[1000px]:px-[20px] max-[680px]:px-[10px]  max-[680px]:rounded-[20px]">
         <div className="absolute w-[713px] h-[366px] top-[353px] left-[455px] max-[1000px]:w-[500px] max-[1000px]:h-[200px] max-[1000px]:top-[110px] max-[1000px]:left-[150px] max-[680px]:w-[300px] max-[680px]:h-[150px] max-[680px]:top-[150px] max-[680px]:left-[100px]">
           <img
@@ -138,7 +138,7 @@ const CustomDropdown2 = ({
           />
         </div>
 
-        <div className="flex items-center gap-11 relative max-[1000px]:flex-col">
+        <div className="flex items-center w-full justify-between gap-11 relative max-[1000px]:flex-col">
 
                        <div className="absolute w-[1600]  max-[1100px]:h-[488px]  max-[1100px]:top-[-0px] z-0  h-auto top-[-85px] left-[-72px] transform-[-22.55deg] max-[1000px]:w-[1000px] max-[1000px]:h-[400px] max-[1000px]:top-[-100px] max-[1000px]:left-[-50px]">
                                              <img
@@ -150,25 +150,25 @@ const CustomDropdown2 = ({
           <div className=" z-50 flex flex-col items-start gap-[33px]  px-0  max-[500px]:gap-[20px]  max-[1000px]:items-center">
             <div className="flex flex-col w-[686px] items-start gap-[27px] relative max-[1300px]:w-[500px] max-[1300px]:gap-[10px] max-[1100px]:w-[430px] max-[1000px]:w-[90%] max-[1000px]:items-center">
 
-              <h1 className="relative w-[686px]   [font-family:'WorkSans'] font-bold text-white text-[60px] max-[1000px]:text-center leading-[100%] max-[1300px]:text-5xl max-[1300px]:w-[500px]  max-[1100px]:w-[400px] max-[1100px]:text-4xl max-[1000px]:text-[36px] max-[767px]:text-[28px]  max-[1000px]:w-[100%]  ">
+              <h1 className="relative w-[686px]   [font-family:'WorkSans'] font-bold text-white text-[74px] max-[1500px]:text-[60px] max-[1000px]:text-center leading-[100%] max-[1300px]:text-5xl max-[1300px]:w-[500px]  max-[1100px]:w-[400px] max-[1100px]:text-4xl max-[1000px]:text-[36px] max-[767px]:text-[28px]  max-[1000px]:w-[100%]  ">
                 Experience the road like never before
               </h1>
 
-              <p className="relative w-[464px]  [font-family:'WorkSans'] font-normal text-white text-base tracking-[0] leading-[100%]  max-[1100px]:w-[350px] max-[1000px]:w-[100%] max-[1000px]:text-center max-[680px]:text-sm max-[375px]:text-xs max-[370px]:h-16">
+              <p className="relative w-[464px]  [font-family:'WorkSans'] font-normal text-white text-lg max-[1500px]:text-base tracking-[0] leading-[100%]  max-[1100px]:w-[350px] max-[1000px]:w-[100%] max-[1000px]:text-center max-[680px]:text-sm max-[375px]:text-xs max-[370px]:h-16">
                 Aliquam adipiscing velit semper morbi. Purus non eu cursus
                 porttitor tristique et gravida. Quis nunc interdum gravida
                 ullamcorper
               </p>
             </div>
 
-            <Button className="h-10 bg-[#ff9e0c] hover:bg-[#e68c0a] text-white rounded-xl px-7 py-[13px] max-[500px]:w-[90%]">
-              <span className="[font-family:'Inter'] font-semibold text-base leading-[100%]">
+            <Button className="h-13 min-[1500px]:h-10 bg-[#ff9e0c] hover:bg-[#e68c0a] text-white rounded-xl px-7 py-[13px] max-[500px]:w-[90%]">
+              <span className="[font-family:'Inter'] font-semibold text-lg max-[1500px]:text-base leading-[100%]">
                 View all cars
               </span>
             </Button>
           </div>
 
-          <Card className=" z-50 w-[416px] bg-white rounded-[20px] overflow-hidden border-none max-[1100px]:w-[300px] max-[1000px]:w-[70%] max-[500px]:w-[90%]">
+          <Card className="min-[1500px]:w-[460px] z-50 w-[416px] bg-white rounded-[20px] overflow-hidden border-none max-[1100px]:w-[300px] max-[1000px]:w-[70%] max-[500px]:w-[90%]">
             <CardContent className="flex flex-col items-center gap-10 p-10 max-[1100px]:p-5">
               <h2 className="[font-family:'WorkSans'] font-semibold text-black text-[28px] text-center tracking-[0] leading-[100%] whitespace-nowrap">
                 Book your car

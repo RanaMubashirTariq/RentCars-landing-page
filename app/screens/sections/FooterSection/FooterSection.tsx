@@ -1,4 +1,5 @@
 import { MailIcon, MapPinIcon, PhoneIcon } from "lucide-react";
+import Link from "next/link";
 import React from "react";
 
 export default function FooterSection (){
@@ -32,11 +33,11 @@ export default function FooterSection (){
     <footer className=" w-full flex flex-col items-center gap-20 pt-[60px] pb-10 px-[72px] bg-white max-[1100px]:px-[50px] max-[1000px]:py-[40px] max-[680px]:px-[25px] max-[680px]:gap-5">
       <div className="flex flex-col gap-[60px] items-center w-full max-[500px]:gap-[30px]">
         {/* Top section with logo and contact info */}
-        <div className="flex w-full max-w-[1296px] gap-[20px]  justify-between items-center max-[1100px]:flex-col max-[1100px]:gap-10">
+        <div className="flex w-full max-w-[1500px] min-[1500px]:gap-[72px] max-[1500px]:max-w-[1296px] gap-[20px]  justify-between items-center max-[1100px]:flex-col max-[1100px]:gap-10">
           {/* Logo */}
           <div className="flex items-center gap-2 mr-[180.33px] max-[1100px]:mr-[0]">
             <div className="relative w-6 h-[25.72px] bg-[url(/group-21.png)] bg-[100%_100%]" />
-            <div className="font-['Poppins'] font-semibold text-[#5937e0] text-base leading-[150%] ">
+            <div className="font-['Poppins'] font-semibold text-[#5937e0] text-lg max-[1500px]:text-base leading-[150%] ">
               RENTCARS
             </div>
           </div>
@@ -55,10 +56,10 @@ export default function FooterSection (){
               </div>
 
               <div className="flex flex-col items-start justify-center ">
-                <div className="font-['WorkSans'] font-normal text-black text-base leading-[26px]">
+                <div className="font-['WorkSans'] font-normal text-black ttext-lg max-[1500px]:text-base leading-[26px]">
                   {item.title}
                 </div>
-                <div className="font-['WorkSans'] font-semibold text-black text-base leading-[26px] ">
+                <div className="font-['WorkSans'] font-semibold text-black text-lg max-[1500px]:text-base leading-[26px] ">
                   {item.value}
                 </div>
               </div>
@@ -69,10 +70,10 @@ export default function FooterSection (){
 
 
         {/* Main footer content */}
-        <div className="w-full max-w-[1296px] flex items-start justify-between gap-[20px] max-[1100px]:flex-wrap  max-[767px]:gap-[40px] max-[500px]:gap-[20px]">
+        <div className="w-full max-w-[1500px] max-[1500px]:max-w-[1296px] flex items-start justify-between gap-[20px] max-[1100px]:flex-wrap  max-[767px]:gap-[40px] max-[500px]:gap-[20px]">
           {/* Company description and social media */}
-          <div className="flex flex-col w-[280px] max-[800px]:w-[500px] max-[500px]:w-full items-start justify-between h-full">
-            <div className="font-['WorkSans'] font-medium text-black text-[14px] leading-[21px]">
+          <div className="flex flex-col w-[320px] max-[1500px]:w-[280px] max-[800px]:w-[500px] max-[500px]:w-full items-start justify-between h-full">
+            <div className="font-['WorkSans'] font-medium text-black text-base max-[1500px]:text-sm leading-[21px]">
               Faucibus faucibus pellentesque dictum turpis. Id pellentesque
               turpis massa a id iaculis lorem turpis euismod. Purus at quisque
               integer sit. Libero quis sapien tempus pellentesque netus leo
@@ -80,30 +81,38 @@ export default function FooterSection (){
             </div>
 
             <div className="flex items-center gap-5 mt-4 max-[550px]:justify-between">
+              <Link href='https://www.facebook.com/'>
               <img
                 className="w-[23.99px] h-6"
                 alt="Facebook"
                 src="/group-22.png"
               />
+               </Link>
                          <div className="relative w-[23.99px] h-6 bg-[url(/vector-326.svg)] bg-black rounded-full">
+                <Link href='https://www.instagram.com/'>
                 <img
                   className="absolute w-3.5 h-[13px] top-[5px] left-[5px]"
                   alt="Instagram"
                   src="/group-24.png"
                 />
+                 </Link>
               </div>
               <div className="relative w-[23.99px] h-6 bg-[url(/vector-348.svg)] bg-black rounded-full">
-                <img
+               <Link href='https://twitter.com/'>
+               <img
                   className="absolute w-[15px] h-3.5 top-[5px] left-[5px]"
                   alt="Twitter"
                   src="/layer1.png"
                 />
+                </Link>
               </div>
+              <Link href='https://www.youtube.com/'>
               <img
                 className="w-[23.99px] h-6"
                 alt="LinkedIn"
                 src="/group-23.png"
               />
+              </Link>
             </div>
           </div>
 
@@ -117,7 +126,7 @@ export default function FooterSection (){
               {usefulLinks.map((link, index) => (
                 <div
                   key={index}
-                  className="font-['WorkSans'] font-normal text-black text-base leading-[26px] cursor-pointer max-[680px]:text-[14px]"
+                  className="font-['WorkSans'] font-normal text-black text-lg max-[1500px]:text-base leading-[26px] cursor-pointer max-[680px]:text-[14px]"
                 >
                   {link}
                 </div>
@@ -134,7 +143,7 @@ export default function FooterSection (){
               {vehicleTypes.map((vehicle, index) => (
                 <div
                   key={index}
-                  className="font-['WorkSans'] font-normal text-black text-base leading-[26px] cursor-pointer max-[680px]:text-[14px]"
+                  className="font-['WorkSans'] font-normal text-black text-lg max-[1500px]:text-base leading-[26px] cursor-pointer max-[680px]:text-[14px]"
                 >
                   {vehicle}
                 </div>
@@ -148,20 +157,12 @@ export default function FooterSection (){
             <div className="font-['WorkSans'] font-semibold text-black text-[20px] leading-[100%]">
               Download App
             </div>
-            <div className="flex gap-3 flex-wrap stify-center max-[480px]:space-x-0  max-[480px]:gap-2">
-            <button className="flex items-center justify-center gap-2 w-[173px] h-[50px] bg-black border border-white border-opacity-20 rounded-lg p-2 max-[480px]:w-[100%]">
-            <img className="h-8 object-contain" alt="Google Play" src="/icon-1.png" />
-                 <div className="flex flex-col items-start">
-                      <p className="text-white text-xs font-['poppins']">Download on the</p>
-                      <h3 className="text-white text-sm font-['poppins']">App Store</h3>
-                 </div>
+            <div className="flex gap-3 flex-col max-[767px]:flex-row stify-center max-[480px]:space-x-0  max-[480px]:gap-2">
+            <button className="">
+            <img className="w-[173px] h-[52px] object-contain" alt="Google Play" src="/App-Store.png" />
             </button>
-            <button className="flex items-center justify-center gap-2 w-[173px] h-[50px] bg-black border border-white border-opacity-20 rounded-lg p-2 max-[480px]:w-[100%] max-[480px]:mt-3">
-            <img className="h-8 object-contain" alt="Google Play" src="/icon-2.png" />
-                 <div className="flex flex-col items-start">
-                      <p className="text-white text-xs font-['poppins']">GET IT ON</p>
-                      <h3 className="text-white text-sm font-['poppins']">Google Play</h3>
-                 </div>
+            <button className="">
+            <img className="w-[173px] h-[52px] object-contain" alt="Google Play" src="/Google-Play.png" />
             </button>
           </div>
           </div>

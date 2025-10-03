@@ -11,7 +11,7 @@ export default function BannerWrapperSection  () {
                  <img src="/black-dotted-2.svg" className="w-full h-full object-cover" alt="" />
             </div>
         <CardContent className="z-50 flex items-center justify-between  px-[86px] py-[58px] max-[1100px]:gap-10 max-[1100px]:px-[50px] max-[1000px]:px-[40px] max-[1000px]:py-[40] max-[800px]:flex-col max-[500px]:px-[20px] max-[500px]:py-[20px]">
-          <div className="flex flex-col items-start max-w-[756px] max-[800px]:items-center">
+          <div className="flex flex-col items-start max-w-[756px] max-[800px]:items-center relative z-50">
             <h2 className="text-[50px] h-[160px] max-[1100px]:h-[80px] max-[1000px]:h-auto font-bold text-white font-['WorkSans'] leading-[100%] mb-4 max-[1100px]:text-[36px] max-[767px]:text-[28px] max-[800px]:text-center">
               Enjoy every mile with adorable companionship.
             </h2>

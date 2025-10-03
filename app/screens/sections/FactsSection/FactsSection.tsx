@@ -29,7 +29,7 @@ const factsData = [
 
 export default function FactsSection  () {
   return (
-    <section className="bg-white flex justify-between gap-[20px] px-[72px] py-[60px] w-full max-[1200px]:px-[50px] max-[1100px]:px-[50px] max-[680px]:py-[40px] max-[640px]:flex-wrap max-[640px]:mx-auto max-[680px]:px-[25px]">
+    <section className="bg-white flex justify-between gap-[20px] px-[150px] max-[1500px]:px-[72px] py-[60px] w-full max-[1200px]:px-[50px] max-[1100px]:px-[50px] max-[680px]:py-[40px] max-[640px]:flex-wrap max-[640px]:mx-auto max-[680px]:px-[25px]">
       {factsData.map((fact) => (
         <Card key={fact.id} className="bg-transparent border-none shadow-none max-[680px]:w-[100%]">
           <div className="flex flex-col items-center gap-[29px] p-0 max-[1200px]:gap-[10px]">
@@ -46,7 +46,7 @@ export default function FactsSection  () {
                 {fact.title}
               </h3>
             </div>
-            <p className="max-w-[357px]  font-['Inter'] font-normal text-black text-base text-center tracking-[0] leading-[24px]  max-[767px]:text-[14px] max-[767px]:leading-[20px] max-[680px]:w-[100%]">
+            <p className="max-w-[357px]  font-['Inter'] font-normal text-black text-lg max-[1500px]:text-base text-center tracking-[0] leading-[24px]  max-[767px]:text-[14px] max-[767px]:leading-[20px] max-[680px]:w-[100%]">
               {fact.description}
             </p>
           </div>

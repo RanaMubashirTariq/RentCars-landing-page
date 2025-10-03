@@ -81,8 +81,8 @@ const carData = [
 
 export default function CarSelectionSection  () {
   return (
-    <section className="bg-white flex flex-col items-center gap-10   px-[72px] py-[60px] w-full max-[1100px]:px-[50px] max-[1000px]:py-[40px] max-[767px]:px-[25px] max-[767px]:gap-5">
-      <div className="flex flex-col max-[767px]:items-center md:flex-row w-full max-w-[1296px] items-start md:items-end justify-between gap-4 ">
+    <section className="bg-white flex flex-col items-center gap-10  px-[150px] max-[1500px]:px-[72px] py-[60px] w-full max-[1100px]:px-[50px] max-[1000px]:py-[40px] max-[767px]:px-[25px] max-[767px]:gap-5">
+      <div className="flex flex-col max-[767px]:items-center md:flex-row w-full max-w-[1630px] max-[1500px]:max-w-[1296px] items-start md:items-end justify-between gap-4 ">
         <h2 className="[font-family:'WorkSans'] font-bold text-[#000000] text-[50px]  leading-[100%] max-[1100px]:text-[36px] max-[767px]:text-[28px] tracking-[0] max-[767px]:text-center">
           Choose the car that <br />
           suits you
@@ -99,7 +99,7 @@ export default function CarSelectionSection  () {
         </Button>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-full max-w-[1296px] gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-full max-w-[1630px] max-[1500px]:max-w-[1296px] gap-6">
         {carData.map((car) => (
           <Card
             key={car.id}

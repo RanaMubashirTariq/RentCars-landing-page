@@ -49,12 +49,12 @@ export default function HeaderSection () {
 
 
   return (
-    <header className="fixed top-0 left-0 w-full z-51  bg-white px-[72px] py-[35.14px]  max-[1100px]:px-[50px] max-[767px]:px-[25px] max-[767px]:py-[20px]">
+    <header className="fixed top-0 left-0 w-full z-51  bg-white px-[150px] max-[1500px]:px-[72px] py-[35.14px]  max-[1100px]:px-[50px] max-[767px]:px-[25px] max-[767px]:py-[20px]">
       {/* Logo */}
                <div className="flex  items-center justify-between relative">
                              <div className="flex items-center gap-2">
         <div className="relative w-6 h-[25.72px] bg-[url(/group.png)] bg-[100%_100%]" />
-        <div className="font-['Poppins'] font-semibold text-[#5937e0] text-base leading-[150%]">
+        <div className="font-['Poppins'] font-semibold text-[#5937e0] text-lg max-[1500px]:text-base leading-[150%]">
           RENTCARS
         </div>
       </div>
@@ -107,7 +107,7 @@ export default function HeaderSection () {
       {menuOpen && (
         <div className="max-[1050px]:block hidden absolute top-full right-0 w-full h-[100vh] bg-white shadow-lg z-50 custom1020:hidden animate-fade-in">
           <div>
-            <ul className="flex flex-col items-start gap-2 p-4">
+            <ul className="flex flex-col items-start  gap-2 p-4">
           {navigationItems.map((item) => (
             <li key={item.id}>
               <button
