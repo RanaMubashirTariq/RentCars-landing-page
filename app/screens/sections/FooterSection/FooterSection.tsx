@@ -159,10 +159,10 @@ export default function FooterSection (){
             </div>
             <div className="flex gap-3 flex-col max-[767px]:flex-row stify-center max-[480px]:space-x-0  max-[480px]:gap-2">
             <button className="">
-            <img className="w-[173px] h-[52px] object-contain" alt="Google Play" src="/App-Store.png" />
+            <Link href='https://www.apple.com/app-store/'><img className="w-[173px] h-[52px] object-contain" alt="Google Play" src="/App-Store.png" /></Link>
             </button>
             <button className="">
-            <img className="w-[173px] h-[52px] object-contain" alt="Google Play" src="/Google-Play.png" />
+            <Link href='https://play.google.com/store'><img className="w-[173px] h-[52px] object-contain" alt="Google Play" src="/Google-Play.png" /></Link>
             </button>
           </div>
           </div>

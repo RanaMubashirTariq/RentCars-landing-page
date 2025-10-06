@@ -33,70 +33,92 @@ export default function MainHeroSection  () {
   const [toCity, setToCity] = useState("Place of return");
   const [rentalDate , setRentalDate] = useState('Rental Date')
   const [returnDate , setReturnDate] = useState('Return Date')
-  
-const CustomDropdown = ({
-  options,
-  selected,
-  setSelected,
-}: {
-  options: string[];
-  selected: string;
-  setSelected: (value: string) => void;
-}) => {
-  const [open, setOpen] = useState(false);
+  const [openDropdown, setOpenDropdown] = useState<string | null>(null);
 
-  return (
-    <div className="relative w-full z-20">
-      <div
-        onClick={() => setOpen(!open)}
-        className=" z-0 font-['WorkSans'] font-regular bg-[#FAFAFA] text-black text-base leading-[20px] border-none rounded-[10px] px-4 py-[9px] cursor-pointer flex justify-between items-center"
-      >
-        <span>{selected}</span>
-        <svg
-          className="w-4 h-4 text-gray-500"
-          fill="none"
-          stroke="currentColor"
-          viewBox="0 0 24 24"
+  
+  // ---------- DROPDOWN COMPONENT ----------
+  const CustomDropdown = ({
+    name,
+    options,
+    selected,
+    setSelected,
+  }: {
+    name: string;                          // each dropdown’s unique name
+    options: string[];
+    selected: string;
+    setSelected: (value: string) => void;
+  }) => {
+    const isOpen = openDropdown === name;
+
+    const toggleDropdown = () => {
+      setOpenDropdown(isOpen ? null : name); // open this one, close others
+    };
+
+    return (
+      <div className="relative w-full z-20">
+        <div
+          onClick={toggleDropdown}
+          className=" z-0 font-['WorkSans'] font-regular bg-[#FAFAFA] text-black text-base leading-[20px] border-none rounded-[10px] px-4 py-[9px] cursor-pointer flex justify-between items-center"
         >
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7" />
-        </svg>
+          <span>{selected}</span>
+          <svg
+            className={`w-4 h-4 text-gray-500 transition-transform duration-200 ${
+              isOpen ? 'rotate-180' : ''
+            }`}
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
+              d="M19 9l-7 7-7-7"
+            />
+          </svg>
+        </div>
+
+        {isOpen && (
+          <ul className="absolute font-['WorkSans'] top-full mt-1 w-full bg-white rounded-[10px] shadow z-50 max-[1500px]:top-[-100px] transition-all duration-300">
+            {options.map((option) => (
+              <li
+                key={option}
+                onClick={() => {
+                  setSelected(option);
+                  setOpenDropdown(null); // close after selecting
+                }}
+                className="px-4 py-2 font-['WorkSans'] hover:bg-[#5937E0] hover:text-white cursor-pointer text-black text-base font-regular font-['WorkSans] leading-[20px] max-[500px]:py-3"
+              >
+                {option}
+              </li>
+            ))}
+          </ul>
+        )}
       </div>
-      {open && (
-        <ul className="absolute font-['WorkSans']  top-full mt-1 w-full bg-white rounded-[10px] shadow z-50  max-[1500px]:top-[-100px]">
-          {options.map((option) => (
-            <li
-              key={option}
-              onClick={() => {
-                setSelected(option);
-                setOpen(false);
-              }}
-              className="px-4 py-2 font-['WorkSans'] hover:bg-[#5937E0] hover:text-white cursor-pointer  text-black text-base font-regular font-['WorkSans] leading-[20px] max-[500px]:py-3"
-            >
-              {option}
-            </li>
-          ))}
-        </ul>
-      )}
-    </div>
-  );
-};
+    );
+  };
 
 
 const CustomDropdown2 = ({
+  name,
   selected,
   setSelected,
 }: {
+  name: string;
   selected: string;
   setSelected: (value: string) => void;
 }) => {
   const dateInputRef = useRef<HTMLInputElement>(null);
+  const isOpen = openDropdown === name;
 
   const handleDateChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setSelected(e.target.value);
+    setOpenDropdown(null); // close after picking date
   };
 
   const openDatePicker = () => {
-    dateInputRef.current?.showPicker(); // Native method
+    setOpenDropdown(name); // open this dropdown
+    dateInputRef.current?.showPicker();
   };
 
   return (
@@ -175,29 +197,38 @@ const CustomDropdown2 = ({
               </h2>
 
               <div className="flex flex-col items-center gap-5 w-full">
-                               <CustomDropdown
-                    options={["Land Croser", "Fortuner", "Cvic", "Jeep"]}
-                    selected={cityName}
-                    setSelected={setCityName}
-                  />
-                          <CustomDropdown
-                    options={["Dallas", "New York", "Los Angeles", "Miami"]}
-                    selected={fromCity}
-                    setSelected={setFromCity}
-                  />
-                                  <CustomDropdown
-                    options={["Chicago", "Houston", "Seattle", "Boston"]}
-                    selected={toCity}
-                    setSelected={setToCity}
-                  />
-                  <CustomDropdown2
-                    selected={rentalDate}
-                    setSelected={setRentalDate}
-                  />
-                   <CustomDropdown2
-                    selected={returnDate}
-                    setSelected={setReturnDate}
-                  />
+              <CustomDropdown
+                name="car"
+                options={['Land Cruiser', 'Fortuner', 'Civic', 'Jeep']}
+                selected={cityName}
+                setSelected={setCityName}
+              />
+
+<CustomDropdown
+                name="rental"
+                options={['Dallas', 'New York', 'Los Angeles', 'Miami']}
+                selected={fromCity}
+                setSelected={setFromCity}
+              />
+
+              <CustomDropdown
+                name="return"
+                options={['Chicago', 'Houston', 'Seattle', 'Boston']}
+                selected={toCity}
+                setSelected={setToCity}
+              />
+
+              <CustomDropdown2
+                name="rentalDate"
+                selected={rentalDate}
+                setSelected={setRentalDate}
+              />
+
+              <CustomDropdown2
+                name="returnDate"
+                selected={returnDate}
+                setSelected={setReturnDate}
+              />
               </div>
 
               <Button className="w-full h-10 bg-[#ff9d0b] hover:bg-[#e68c0a] text-white rounded-xl px-7 py-[13px]">
