@@ -79,7 +79,7 @@ export default function MainHeroSection  () {
         </div>
 
         {isOpen && (
-          <ul className="absolute font-['WorkSans'] top-full mt-1 w-full bg-white rounded-[10px] shadow z-50 max-[1500px]:top-[-100px] transition-all duration-300">
+          <ul className="absolute font-['WorkSans'] top-full mt-[20px]  w-full h-[80px] overflow-y-scroll bg-white rounded-[10px] shadow z-50 max-[1500px]:top-[-100px] transition-all duration-300">
             {options.map((option) => (
               <li
                 key={option}

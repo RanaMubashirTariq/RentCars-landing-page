@@ -70,17 +70,17 @@ export default function FooterSection (){
 
 
         {/* Main footer content */}
-        <div className="w-full max-w-[1500px] max-[1500px]:max-w-[1296px] flex items-start justify-between gap-[20px] max-[1100px]:flex-wrap  max-[767px]:gap-[40px] max-[500px]:gap-[20px]">
+        <div className="w-full max-w-[1500px] max-[1500px]:max-w-[1296px] flex items-start justify-between gap-[20px] max-[1100px]:flex-wrap  max-[1000px]:gap-[40px] ">
           {/* Company description and social media */}
-          <div className="flex flex-col w-[320px] max-[1500px]:w-[280px] max-[800px]:w-[500px] max-[500px]:w-full items-start justify-between h-full">
-            <div className="font-['WorkSans'] font-medium text-black text-base max-[1500px]:text-sm leading-[21px]">
+          <div className="flex flex-col w-[320px] max-[1500px]:w-[280px] max-[800px]:w-[500px] max-[500px]:w-full items-start justify-between">
+            <div className="font-['WorkSans'] font-medium text-black text-base max-[1500px]:text-sm leading-[21px]  text-ellipsis line-clamp-4">
               Faucibus faucibus pellentesque dictum turpis. Id pellentesque
               turpis massa a id iaculis lorem turpis euismod. Purus at quisque
               integer sit. Libero quis sapien tempus pellentesque netus leo
               feugiat augue ut. Sollicitudin vitae dictum sed vulputate.
             </div>
 
-            <div className="flex items-center gap-5 mt-4 max-[550px]:justify-between">
+            <div className="flex items-center gap-5 mt-4 max-[550px]:justify-between mt-[63px] max-[1000px]:mt-[30px]">
               <Link href='https://www.facebook.com/'>
               <img
                 className="w-[23.99px] h-6"
@@ -118,11 +118,11 @@ export default function FooterSection (){
 
           {/* Useful links */}
             <div className="w-full max-w-[560px] max-[1300px]:max-w-[540px] max-[1100px]:max-w-[470px] max-[1000px]:max-w-[400px] max-[767px]:flex-wrap flex gap-5 justify-between">
-          <div className="flex flex-col w-[180px] items-start gap-6  max-[500px]:gap-3 max-[1300px]:pl-[10px]max-[1000px]:pl-[0px]">
+          <div className="flex flex-col w-[180px]  items-start gap-6  max-[500px]:gap-3 max-[1300px]:pl-[10px]max-[1000px]:pl-[0px]">
             <div className="font-['WorkSans'] font-semibold text-black text-[20px] leading-[100%] max-[640px]:text-[16px]">
               Useful links
             </div>
-            <div className="flex flex-col items-start gap-4 w-full  max-[500px]:gap-2">
+            <div className="flex flex-col items-start  w-full  max-[500px]:gap-2">
               {usefulLinks.map((link, index) => (
                 <div
                   key={index}
@@ -139,7 +139,7 @@ export default function FooterSection (){
             <div className="font-['WorkSans'] font-semibold text-black text-xl leading-[100%] max-[640px]:text-[14px] ">
               Vehicles
             </div>
-            <div className="flex flex-col items-start gap-4 w-full  max-[500px]:gap-2">
+            <div className="flex flex-col items-start  w-full  max-[500px]:gap-2">
               {vehicleTypes.map((vehicle, index) => (
                 <div
                   key={index}
@@ -157,7 +157,7 @@ export default function FooterSection (){
             <div className="font-['WorkSans'] font-semibold text-black text-[20px] leading-[100%]">
               Download App
             </div>
-            <div className="flex gap-3 flex-col max-[767px]:flex-row stify-center max-[480px]:space-x-0  max-[480px]:gap-2">
+            <div className="flex gap-6 flex-col max-[767px]:flex-row stify-center max-[480px]:space-x-0  max-[500px]:gap-4">
             <button className="">
             <Link href='https://www.apple.com/app-store/'><img className="w-[173px] h-[52px] object-contain" alt="Google Play" src="/App-Store.png" /></Link>
             </button>
