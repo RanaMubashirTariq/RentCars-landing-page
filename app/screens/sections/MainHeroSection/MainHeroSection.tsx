@@ -150,7 +150,7 @@ const CustomDropdown2 = ({
 
 
   return (
-    <section className="relative bg-white flex flex-col items-center px-[150px] max-[1500px]:px-[72px] py-0 w-full max-[1100px]:px-[50px] max-[680px]:px-[25px] ">
+    <section className="relative bg-white flex mt-[-30px] flex-col items-center px-[150px] max-[1500px]:px-[72px] py-0 w-full max-[1100px]:px-[50px] max-[680px]:px-[25px]">
       <div className="flex flex-col items-start justify-center w-full h-[660px] max-[1000px]:h-auto bg-[#5937e0] rounded-[40px] overflow-hidden px-[72px] max-[1000px]:py-5 relative   max-[1000px]:px-[40px] max-[1000px]:px-[20px] max-[680px]:px-[10px]  max-[680px]:rounded-[20px]">
         <div className="absolute w-[713px] h-[366px] top-[353px] left-[455px] max-[1000px]:w-[500px] max-[1000px]:h-[200px] max-[1000px]:top-[110px] max-[1000px]:left-[150px] max-[680px]:w-[300px] max-[680px]:h-[150px] max-[680px]:top-[150px] max-[680px]:left-[100px]">
           <img
