@@ -94,8 +94,9 @@ export default function CarSelectionSection  () {
         >
           <span className="[font-family:'WorkSans'] font-bold text-black text-[20px] leading-[100%] max-[480px]:text-[16px]">
             View All
+            
           </span>
-          <ArrowRightIcon className="w-6 h-6 max-[480px]:w-[20px] max-[480px]:h-[20px]" />
+          <img src="arrow-right-black.png" className="h-6 w-6 max-[767px]:h-5 max-[767px]:w-5" alt="" />
         </Button>
       </div>
 
