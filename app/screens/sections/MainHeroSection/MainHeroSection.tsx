@@ -183,7 +183,7 @@ const CustomDropdown2 = ({
               </p>
             </div>
 
-            <Button className="h-13 min-[1500px]:h-10 bg-[#ff9e0c] hover:bg-[#e68c0a] text-white rounded-xl px-7 py-[13px] max-[500px]:w-[90%]">
+            <Button className="cursor-pointer h-13 min-[1500px]:h-10 bg-[#ff9e0c] hover:bg-[#e68c0a] text-white rounded-xl px-7 py-[13px] max-[500px]:w-[90%]">
               <span className="[font-family:'Inter'] font-semibold text-lg max-[1500px]:text-base leading-[100%]">
                 View all cars
               </span>
@@ -231,7 +231,7 @@ const CustomDropdown2 = ({
               />
               </div>
 
-              <Button className="w-full h-10 bg-[#ff9d0b] hover:bg-[#e68c0a] text-white rounded-xl px-7 py-[13px]">
+              <Button className="cursor-pointer w-full h-10 bg-[#ff9d0b] hover:bg-[#e68c0a] text-white rounded-xl px-7 py-[13px]">
                 <span className="[font-family:'Inter'] font-semibold text-base leading-[100%]">
                   Book now
                 </span>

@@ -29,7 +29,7 @@ export default function BannerWrapperSection  () {
                 className="h-full w-full border-none text-[#6c757d] shadow-none border-none outline-none   font-['Inter'] font-semibold text-gray-600 text-base max-[767px]:text-[14px] "
                 placeholder="City"
               />
-              <Button className="absolute right-2.5 max-[767]:right-1 h-10 bg-[#ff9d0b] hover:bg-[#ff9E0c] rounded-xl px-7 max-[767px]:h-[40px] max-[767px]:px-5">
+              <Button className="cursor-pointer absolute right-2.5 max-[767]:right-1 h-10 bg-[#ff9d0b] hover:bg-[#ff9E0c] rounded-xl px-7 max-[767px]:h-[40px] max-[767px]:px-5">
                 <span className="font-['Inter'] font-semibold text-white text-base leading-[100%] max-[680px]:text-[14px] ">
                   Search
                 </span>

@@ -90,7 +90,7 @@ export default function CarSelectionSection  () {
 
         <Button
           variant="ghost"
-          className="flex items-center gap-2 p-0 hover:bg-transparent"
+          className="flex items-center gap-2 p-0 hover:bg-transparent cursor-pointer hover:border hover:border-black px-2 transform transform-transiton duration-300 "
         >
           <span className="[font-family:'WorkSans'] font-bold text-black text-[20px] leading-[100%] max-[480px]:text-[16px]">
             View All
@@ -151,7 +151,7 @@ export default function CarSelectionSection  () {
             </CardContent>
 
             <CardFooter className="p-0 w-full">
-              <Button className="w-full h-[50px] max-[480px]:h-[40px] max-[360px]:h-[30px] bg-[#5937e0] hover:bg-[#4a2dc0] text-white text-[16px] leading-[100%] rounded-xl [font-family:'Inter'] font-semibold">
+              <Button className="cursor-pointer w-full h-[50px] max-[480px]:h-[40px] max-[360px]:h-[30px] bg-[#5937e0] hover:bg-[#4a2dc0] text-white text-[16px] leading-[100%] rounded-xl [font-family:'Inter'] font-semibold">
                 View Details
               </Button>
             </CardFooter>

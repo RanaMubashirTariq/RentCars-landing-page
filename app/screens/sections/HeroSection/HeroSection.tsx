@@ -128,7 +128,7 @@ export default function HeroSection  () {
               key={index}
               className="w-60 bg-white rounded-[20px] overflow-hidden bg-white "
             >
-              <CardContent className="flex items-center gap-4 p-4">
+              <CardContent className="flex items-center gap-4 p-4 cursor-pointer hover:bg-gray-100 transform transform-transiton duration-300 ">
                 <div className="w-[72px] h-[68px] max-[680px]:w-[50px] max-[680px]:h-[50px] bg-[#ff9d0b] rounded-xl overflow-hidden flex items-center justify-center">
                   {stat.icon ? (
                     stat.icon
