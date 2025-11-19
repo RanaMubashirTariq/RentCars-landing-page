@@ -105,14 +105,14 @@ export default function HeaderSection () {
 
       {/* Mobile Menu Dropdown */}
       {menuOpen && (
-        <div className="max-[1050px]:block hidden absolute top-full right-0 w-full h-[100vh] bg-white shadow-lg z-50 custom1020:hidden animate-fade-in">
+        <div className="max-[1050px]:block hidden absolute top-[40px] right-0 w-full h-[100vh] bg-white shadow-lg z-50 custom1020:hidden animate-fade-in">
           <div>
             <ul className="flex flex-col items-start  gap-2 p-4">
           {navigationItems.map((item) => (
             <li key={item.id}>
               <button
                 onClick={() => handleScrollTo(item.id)}
-                className={`font-['Inter'] text-[18px] leading-[100%] text-defaultblack cursor-pointer ${
+                className={`font-['Inter'] text-[18px] leading-[100%] text-[#000000] cursor-pointer ${
                   activeSection === item.id ? "font-bold" : "font-medium"
                 }`}
               >
@@ -125,10 +125,10 @@ export default function HeaderSection () {
                   <img src='./phone-icon.svg' className="w-6 h-6" />
                 </div>
                 <div className="flex flex-col items-start justify-center ">
-                  <div className="font-['Work_Sans'] font-normal text-defaultblack text-base leading-[26px]">
+                  <div className="font-['Work_Sans'] font-normal text-[#000000] text-base leading-[26px]">
                     Need help?
                   </div>
-                  <div className="font-['Work_Sans'] font-semibold text-defaultblack text-base leading-[26px]">
+                  <div className="font-['Work_Sans'] font-semibold text-[#000000] text-base leading-[26px]">
                     +996 247-1680
                   </div>
                 </div>
